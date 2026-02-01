@@ -5,55 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rishikeshan Rajendram | AI & MLOps Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #f9fafb; }
-        .skill-badge { @apply px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold m-1 inline-block; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: #f8fafc; }
+        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .gradient-text { background: linear-gradient(90deg, #4f46e5, #0ea5e9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .skill-tag { transition: all 0.2s; border: 1px solid #e2e8f0; }
+        .skill-tag:hover { transform: translateY(-2px); background: #4f46e5; color: white; border-color: #4f46e5; }
     </style>
 </head>
-<body class="text-gray-800">
-    <div class="max-w-4xl mx-auto py-12 px-6">
-        <header class="border-b-2 border-blue-600 pb-8 mb-8">
-            <h1 class="text-4xl font-bold text-gray-900">Rishikeshan Rajendram</h1>
-            <p class="text-xl text-blue-600 font-medium">AI & MLOps Engineer</p>
-            <div class="mt-4 flex flex-wrap gap-4 text-sm text-gray-600">
-                <span>📍 Singapore</span>
-                <a href="mailto:rikesh2191@gmail.com" class="hover:text-blue-600 text-blue-500 underline">Email</a>
-                <a href="https://www.linkedin.com/in/rishikeshan-rajendram/" class="hover:text-blue-600 text-blue-500 underline">LinkedIn</a>
+<body class="text-slate-800 leading-relaxed">
+
+    <div class="fixed top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-600 via-blue-500 to-emerald-400"></div>
+
+    <div class="max-w-5xl mx-auto py-16 px-6 lg:px-8">
+        
+        <header class="mb-16">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                <div>
+                    <h1 class="text-5xl font-extrabold tracking-tight text-slate-900 mb-2">Rishikeshan <span class="gradient-text">Rajendram</span></h1>
+                    <p class="text-2xl font-semibold text-slate-600 tracking-tight">AI & MLOps Engineer</p>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                    <a href="mailto:rikesh2191@gmail.com" class="px-5 py-2.5 bg-slate-900 text-white rounded-xl font-medium hover:bg-slate-800 transition shadow-lg shadow-indigo-100 flex items-center gap-2">
+                        Email Me
+                    </a>
+                    <a href="https://www.linkedin.com/in/rishikeshan-rajendram/" target="_blank" class="px-5 py-2.5 bg-white text-slate-700 border border-slate-200 rounded-xl font-medium hover:bg-slate-50 transition flex items-center gap-2">
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="mt-6 flex items-center gap-6 text-slate-500 font-medium italic">
+                <span>📍 Singapore, SG</span>
+                <span class="w-1.5 h-1.5 bg-slate-300 rounded-full"></span>
+                <span>9+ Years Experience</span>
             </div>
         </header>
 
-        <section class="mb-10">
-            <h2 class="text-2xl font-bold mb-4">Summary</h2>
-            <p class="leading-relaxed text-gray-700">9+ years of experience driving end-to-end ML and MLOps workflows. Expert in LLMs, RAG, and GNNs with a focus on scalable deployments via Kubernetes and GPU acceleration.</p>
-        </section>
-
-        <section class="mb-10">
-            <h2 class="text-2xl font-bold mb-6 border-l-4 border-blue-600 pl-4">Work Experience</h2>
+        <main class="grid grid-cols-1 lg:grid-cols-3 gap-12">
             
-            <div class="mb-8">
-                <div class="flex justify-between items-baseline">
-                    <h3 class="text-lg font-bold">Senior Research Engineer</h3>
-                    <span class="text-sm text-gray-500">2020 – Present</span>
-                </div>
-                <p class="text-blue-600 mb-2">Agency for Science, Technology and Research (A*STAR)</p>
-                <ul class="list-disc ml-5 space-y-2 text-gray-700">
-                    <li>Led deployment of advanced analytics engines for vehicle scheduling.</li>
-                    <li>Engineered GNN models for traffic prediction.</li>
-                    <li>Automated ML pipelines using Docker & Kubernetes for air-gapped environments.</li>
-                </ul>
-            </div>
-            </section>
+            <div class="lg:col-span-1 space-y-10">
+                <section>
+                    <h2 class="text-xs uppercase tracking-[0.2em] font-bold text-indigo-600 mb-4">Summary</h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        Driving end-to-end ML, optimization modeling, and MLOps workflows across cloud-native and secure air-gapped environments. Expert in <span class="text-slate-900 font-semibold">LLMs, RAG, and Graph Neural Networks</span>.
+                    </p>
+                </section>
 
-        <section class="mb-10 bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-            <h2 class="text-2xl font-bold mb-4">Technical Stack</h2>
-            <div class="flex flex-wrap">
-                <span class="skill-badge">Kubernetes</span> <span class="skill-badge">LLMs</span>
-                <span class="skill-badge">MLOps</span> <span class="skill-badge">PyTorch</span>
-                <span class="skill-badge">RAG</span> <span class="skill-badge">AWS</span>
-                <span class="skill-badge">Docker</span> <span class="skill-badge">LangChain</span>
-                <span class="skill-badge">VectorDB</span> <span class="skill-badge">Spark</span>
+                <section>
+                    <h2 class="text-xs uppercase tracking-[0.2em] font-bold text-indigo-600 mb-4">Core Stack</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1.5 bg-white rounded-lg text-sm font-medium">Kubernetes</span>
+                        <span class="skill-tag px-3 py-1.5 bg-white rounded-lg text-sm font-medium">LLMOps</span>
+                        <span class="skill-tag px-3 py-1.5 bg-white rounded-lg text-sm font-medium">PyTorch</span>
+                        <span class="skill-tag px-3 py-1.5 bg-white rounded-lg text-sm font-medium">LangChain</span>
+                        <span class="skill-tag px-3 py-1.5 bg-white rounded-lg text-sm font-medium">Docker</span>
+                        <span class="skill-tag px-3 py-1.5 bg-white rounded-lg text-sm font-medium">AWS</span>
+                        <span class="skill-tag px-3 py-1.5 bg-white rounded-lg text-sm font-medium">VectorDB</span>
+                        <span class="skill-tag px-3 py-1.5 bg-white rounded-lg text-sm font-medium">CI/CD</span>
+                        <span class="skill-tag px-3 py-1.5 bg-white rounded-lg text-sm font-medium">GNNs</span>
+                        <span class="skill-tag px-3 py-1.5 bg-white rounded-lg text-sm font-medium">Spark</span>
+                    </div>
+                </section>
+
+                <section class="glass p-6 rounded-2xl shadow-sm">
+                    <h2 class="text-xs uppercase tracking-[0.2em] font-bold text-indigo-600 mb-4">Certifications</h2>
+                    <ul class="space-y-3">
+                        <li class="flex gap-3 items-start">
+                            <div class="w-2 h-2 mt-2 bg-indigo-500 rounded-full"></div>
+                            <div>
+                                <p class="text-sm font-bold">CC – Cybersecurity</p>
+                                <p class="text-xs text-slate-500">ISC2</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <div class="w-2 h-2 mt-2 bg-indigo-500 rounded-full"></div>
+                            <div>
+                                <p class="text-sm font-bold">ACCA - Applied Knowledge</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
             </div>
-        </section>
+
+            <div class="lg:col-span-2 space-y-12">
+                <section>
+                    <h2 class="text-xs uppercase tracking-[0.2em] font-bold text-indigo-600 mb-8">Professional Experience</h2>
+                    
+                    <div class="relative pl-8 pb-10 border-l-2 border-slate-200">
+                        <div class="absolute -left-[9px] top-0 w-4 h-4 bg-indigo-600 rounded-full border-4 border-white"></div>
+                        <div class="flex flex-col md:flex-row md:justify-between mb-2">
+                            <h3 class="text-xl font-bold text-slate-900">Senior Research Engineer</h3>
+                            <span class="text-sm font-semibold bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full h-fit mt-2 md:mt-0">2020 — Present</span>
+                        </div>
+                        <p class="text-indigo-600 font-semibold mb-4">A*STAR (Singapore)</p>
+                        <ul class="space-y-3 text-slate-600 italic">
+                            <li class="flex gap-2"><span>•</span> <span>Led deployment of advanced analytics engines for vehicle scheduling, boosting task automation.</span></li>
+                            <li class="flex gap-2"><span>•</span> <span>Engineered GNN models for traffic prediction and urban mobility simulations.</span></li>
+                            <li class="flex gap-2"><span>•</span> <span>Integrated RAG and LLM solutions with GPU acceleration for scalable inference.</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="relative pl-8 border-l-2 border-slate-200">
+                        <div class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-300 rounded-full border-4 border-white"></div>
+                        <div class="flex flex-col md:flex-row md:justify-between mb-2">
+                            <h3 class="text-xl font-bold text-slate-900">Research Engineer</h3>
+                            <span class="text-sm font-semibold bg-slate-100 text-slate-600 px-3 py-1 rounded-full h-fit mt-2 md:mt-0">2016 — 2020</span>
+                        </div>
+                        <p class="text-indigo-600 font-semibold mb-4">Fujitsu-SMU Unicen Corporate Lab</p>
+                        <ul class="space-y-3 text-slate-600 italic">
+                            <li class="flex gap-2"><span>•</span> <span>Developed time-series forecasting models (ARIMA, Multinomial Logit) for resource allocation.</span></li>
+                            <li class="flex gap-2"><span>•</span> <span>Operationalized deep learning models for real-time taxi demand prediction, reducing idle time by 20%.</span></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="bg-slate-900 text-white p-8 rounded-3xl shadow-2xl overflow-hidden relative">
+                    <div class="relative z-10">
+                        <h2 class="text-xs uppercase tracking-[0.2em] font-bold text-indigo-400 mb-4">Featured Publication</h2>
+                        <h3 class="text-2xl font-bold mb-2 tracking-tight">SUMMIT: Multi-modal agent-based co-simulation</h3>
+                        <p class="text-slate-400 mb-6 italic">Simulation Modelling Practice and Theory</p>
+                        <a href="https://www.tnp.sg/news/singapore/app-aims-direct-cabbies-spots-high-street-hail-demand" target="_blank" class="inline-flex items-center font-bold text-indigo-400 hover:text-indigo-300 transition gap-2">
+                            View Impact Highlight <span>→</span>
+                        </a>
+                    </div>
+                    <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-indigo-600/20 rounded-full blur-3xl"></div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="mt-20 pt-8 border-t border-slate-200 text-center text-slate-400 text-sm">
+            &copy; 2024 Rishikeshan Rajendram • Built with Tailwind CSS • Hosted on GitHub Pages
+        </footer>
     </div>
+
 </body>
 </html>
